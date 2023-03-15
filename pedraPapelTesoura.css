@@ -1,0 +1,39 @@
+        /*padronização inicial*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*estilização do titulo*/
+        h1{
+            text-align: center;
+            text-shadow: 3px 2px 5px ;  
+        }
+        /*Estilização das imagens*/
+        .player-options img,
+        .enemy-options img
+        {
+            max-width: 100px;
+            opacity: 0.2;
+            cursor: pointer;
+            
+        }
+        /*Estilização da imagem ao mouse passar em cima*/
+        .player-options img:hover{
+            max-width: 200px;
+            transition: 1s;
+            
+        }
+        /*alinhamento*/
+        .aling{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /*Estilização de tamanho*/
+        .player-options,
+        .enemy-options
+        {
+            width: 50%;
+        }
+
+

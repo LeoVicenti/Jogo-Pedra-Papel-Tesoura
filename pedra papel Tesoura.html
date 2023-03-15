@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="pedraPapelTesoura.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra papel Tesoura</title>
+</head>
+<body>
+   
+
+    <h1>Jogo Pedra, Papel, tesoura</h1> <!--titulo da pagina-->
+    <hr><!--linha de separação do titulo-->
+    <div class="aling"><!--criação de div para estilização das opções-->
+        <div class="player-options"><!--criação de div pra opçoes do jogador-->
+            <div><img opt="pedra" src="rock.png"></div>
+            <div><img opt="papel" src="paper.png"></div>
+            <div><img opt="tesoura" src="scisor.png"></div>
+            
+        </div>
+        <div class="enemy-options"><!--crição de div para opçoes do inimigo-->
+            <div><img opt="pedra" src="rock.png"></div>
+            <div><img opt="papel" src="paper.png"></div>
+            <div><img opt="tesoura"src="scisor.png"></div>
+        
+        </div>
+    </div>
+    <audio id="vitoria">
+        <source src="win.mp3" type="audio/mp3">
+    </audio>
+    <audio id="derrota">
+        <source src="lose.mp3" type="audio/mp3">
+    </audio>
+    <audio id="empate">
+        <source src="empate.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="pedraPapelTesoura.js"></script>
+    
+</body>
+</html>
