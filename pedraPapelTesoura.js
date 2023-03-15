@@ -7,6 +7,10 @@
             const enemyOptions = document.querySelectorAll('.enemy-options div')
             for(var i = 0; i < enemyOptions.length; i++){
                     enemyOptions[i].childNodes[0].style.opacity = 0.2;
+                    enemyOptions[i].childNodes[0].style.width = "100px";
+                    enemyOptions[i].childNodes[0].style.maxWidth = "200px";
+                    enemyOptions[i].childNodes[0].style.transition = "0.5s";
+                    
                 }
         };
 
@@ -18,7 +22,10 @@
             for(var i = 0; i < enemyOptions.length; i++){
                 if(i == rand){
                     enemyOptions[i].childNodes[0].style.opacity = 1;
+                    enemyOptions[i].childNodes[0].style.width = "200px";
+                    enemyOptions[i].childNodes[0].style.transition = "1s";
                     inimigoOpt = enemyOptions[i].childNodes[0].getAttribute('opt')
+                    
                     
 
                 }
@@ -63,13 +70,23 @@
            alert('EMPATE🤔!!');
         },500);
         }
+        setTimeout(function(){
+            const enemyOptions = document.querySelectorAll('.enemy-options div');
+            for(var i = 0; i < enemyOptions.length; i++){
+            enemyOptions[i].childNodes[0].style.opacity = 0.2;
+            enemyOptions[i].childNodes[0].style.width = "100px";
+            
+            
+        }
+        },2000)
+
         
         }
-       
-
+     
         function resetOpacidadePlayer(){
             for(var i = 0; i < elementos.length; i++){
                 elementos[i].style.opacity = 0.3;
+                
             }
         }
 
